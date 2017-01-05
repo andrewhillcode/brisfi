@@ -1,0 +1,354 @@
+body {
+	background-color: #E9E9E9;
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+#menu{
+	background-color: #525252;
+	top: 0px;
+	left: 0px;
+	width:100%;
+	height:40px;
+	position:fixed;
+	z-index: 3; /*makes sure nothing goes over the menu*/
+}
+
+#mobilemenu {
+	background-color: #525252;
+	top: 0px;
+	left: 0px;
+	width:100%;
+	height:40px;
+	position:fixed;
+	display: none;
+	z-index: 3; /*makes sure nothing goes over the menu*/
+}
+
+#content {
+	background-color:#FFFFFF;
+	width:660px; /*mobile design will kick in after this value*/
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-right: 50px;
+	padding-bottom: 25px;
+	padding-left: 50px;
+}
+
+#buttons {
+	background-color:#525252;
+	margin: 0 auto;
+	width:760px; /*100px larger to take content padding into account*/
+	height: 40px;
+}
+
+#footer{
+	min-height: 24px;
+	width:50%;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+	padding-right: 50px;
+	text-align: center;
+	padding-left: 50px;
+}
+
+#map{
+    height: 300px;
+	width: 300px;
+	margin-top: 10px;
+    margin-left: auto;
+	margin-right: auto;
+    padding: 0px;
+	z-index: 2; /*makes sure it stays under menu bar*/
+ }
+ 
+#mapResults{
+    height: 300px;
+	width: 100%;
+    margin-left: auto;
+	margin-right: auto;
+    padding: 0px;
+	position: relative;
+	z-index: 2; /*makes sure it stays under menu bar*/
+}
+
+/*Text Styles*/
+p {
+	color:black; 
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:1em;
+	text-align: center;
+}
+
+h1 {
+	color:black;
+	text-align:center; 
+	margin-bottom:0; 
+	font-family:Arial,Helvetica,sans-serif; 
+	font-size:2em;
+}
+h2 {
+	color:black;
+	text-align:center;
+	margin-bottom:0;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:1.5em;
+}
+h3 {
+	color:black;
+	text-align:center;
+}
+
+#results {
+	font-style:italic;
+}
+
+
+li.nav{
+	display: inline-block;
+}
+
+ul { 
+    display: block;
+    list-style-type: none;
+    margin-top: 0;     /* no margin */ 
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+}
+
+li.logo{
+	display: inline-block;
+}
+/*Regular links*/
+a:link, a:visited {
+    color: #000000;
+}
+
+/*Nav bar links*/
+a.nav:link, a.nav:visited {
+	display: inline-block;
+    width: 100px;
+	vertical-align: middle;
+	font-family: Arial;
+	font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #525252;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.logo:link, a.logo:visited {
+	display: inline-block;
+
+	vertical-align: middle;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #525252;
+
+}
+
+a.nav:hover, a.nav:active {
+    background-color: #272727;
+}
+
+/*Tables*/
+table, th, td {
+    border: 1px solid #525252;
+}
+
+table {
+    border-collapse: collapse;
+	width: 100%;
+}
+th {
+	height: 35px;
+	color: #FFFFFF;
+    background-color: #525252;
+}
+tr {
+	height: 30px;
+	background-color: #FFFFFF;
+}
+td {
+	padding: 3px;
+}
+td.centre {
+	text-align: center;
+}
+td.reviewAlt {
+	text-align: center;
+	background-color: #D6E3EF;
+}
+
+/*image styles*/
+
+
+fieldset {
+	background-color:#DEEFFF; /* light colour to differentiate from plain content*/ 
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#registerfieldset {
+	text-align: left;
+}
+
+#loginfieldset {
+	width: 200px;
+
+}
+
+#review {
+	text-align: center;
+}
+
+.review {
+	width: 50%;
+	height: 40px;
+}
+
+#biglogo {
+	height: 90px;
+	width: 225px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 10px;
+}
+
+#noaccount {
+	text-align: center;
+}
+
+li:hover a {
+	background: #19c589;
+}
+
+li ul {
+	display: none;
+}
+
+li ul li {
+	display: block;
+	float: none;
+}
+
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+.show-menu {  /* styling for mobile menu toggle label */ 
+	font-family: Arial;
+	font-size: 20px;
+	text-decoration: none;
+	color: #FFFFFF;
+	background: #3399FF;
+	text-align: center;
+	padding: 0;
+	display: none;
+	position: fixed;
+	right:0px;
+	margin-right: 20px;
+	z-index: 4; /* display menu button ontop of fixed nav bar */ 
+}
+
+input[type=checkbox]{ /* invisible checkbox to toggle mobile menu */ 
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu{ /* show menu div when checkbox is checked */ 
+    display: inline-block;
+}
+
+#mobile-logo { 
+	display: none; /* hide logo in normal mode */ 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#indexmenu {
+	text-align: center;
+}
+
+/*Mobile design*/
+
+@media screen and (max-width : 760px){ /* screen will convert to mobile mode
+									 when content hits the edges of the page*/ 
+	ul {
+		position: center;
+	
+	}
+
+	ul li, li a {
+		position: center;
+		width: 100%;
+	}
+
+	.show-menu { /* show mobile menu label */ 
+		display: inline-block;
+		width: 20%;
+	}
+	
+	#content{ /* scale content by % to fit mobile screen */ 
+		padding-right: 5%;
+		padding-left: 5%;
+		padding-top: 30px;
+		padding-bottom: 25px;
+		width: 90%;
+	}
+	
+	
+	a.nav:link, a.nav:visited  {
+		position: center;
+		width: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
+		font-size: 20px;
+	}
+	
+	#buttons { /* make buttons wide so it's easier to click */ 
+		width: 100%;
+	}
+	
+	#menu { 
+		position: fixed;
+		display: none; 
+		margin-top: 40px; /* make sure menu appears below top bar */ 
+		margin-bottom: 0px;
+		width: 100%;
+	}
+	
+	#mobilemenu { /* change top navigation bar styling */ 
+		display: inline-block;
+	}
+	
+	#logo { /* hide desktop logo */ 
+		display: none;
+	}
+	
+	#mobile-logo { /* display mobile logo */ 
+		width: 90px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	table#archivetable td:nth-child(2),  table#archivetable td:nth-child(3), 
+	table#archivetable th:nth-child(2), table#archivetable  th:nth-child(3),
+	table#resultstable td:nth-child(2),  table#resultstable td:nth-child(3), 
+	table#resultstable th:nth-child(2), table#resultstable  th:nth-child(3)  { 
+		display: none; /* hide table columns on mobile to save space */ 
+	} 
+}

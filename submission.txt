@@ -1,0 +1,26 @@
+Names:
+Sebastian Sherry n9161350
+Andrew Hill n9173838
+
+Hosted by Andrew Hill: n9173838
+
+Add on Tasks:
+-Maps
+-Mobile
+-CSV upload (requires username: admin password: admin to view)
+
+Contributions:
+
+Sebastian:
+-Validation
+-Maps
+-Javascript
+-Form Creation
+-Search
+
+Andrew:
+-CSS
+-Mobile
+-CSV
+-Database
+-Search
